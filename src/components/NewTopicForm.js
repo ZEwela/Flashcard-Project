@@ -18,7 +18,6 @@ export default function NewTopicForm() {
       return;
     }
 
-    // dispatch your add topic action here
     const idTopic = uuidv4();
     dispatch(addTopic({id: idTopic, name: name, icon: icon}));
     history.push(ROUTES.topicsRoute());
